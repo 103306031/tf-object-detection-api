@@ -842,7 +842,7 @@ def visualize_boxes_and_labels_on_image_array(
 #==================================================================================#
 #===============creating boxes data .txt - 2020.02.21 joy==========================#
 #==================================================================================#    
-  with open('PASCALVOC\\detections\\' + txt_name, 'w') as txt_file:
+  with open('PASCALVOC/detections/' + txt_name, 'w') as txt_file:
     t = 0
     for box, color in box_to_color_map.items():
       ymin, xmin, ymax, xmax = box  #由於使用了use_normalized_coordinates，將座標歸一化了，所以要映射回來
